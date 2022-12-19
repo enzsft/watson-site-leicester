@@ -24,8 +24,6 @@ import lisaImage from "../public/images/employees/lisa.jpg";
 import discoveryImage from "../public/images/payments/discovery.svg";
 import mastercardImage from "../public/images/payments/mastercard.svg";
 import visaImage from "../public/images/payments/visa.svg";
-import surgery1Image from "../public/images/surgery/surgery-1.jpg";
-import surgery2Image from "../public/images/surgery/surgery-2.jpg";
 import foot1Image from "../public/images/feet/foot-1.jpg";
 import foot2Image from "../public/images/feet/foot-2.jpg";
 import foot3Image from "../public/images/feet/foot-3.jpg";
@@ -36,9 +34,7 @@ import hpcImage from "../public/images/other/hpc.webp";
 import {
   IconMail,
   IconPhone,
-  IconMapPin,
   IconMapPins,
-  IconBrandFacebook,
   IconClock,
   IconCashBanknote,
   IconCurrencyPound,
@@ -118,16 +114,19 @@ const Hero = () => {
                 fontSize: 50,
               }}
             >
-              G.T. Watson Chiropody Clinic
+              G.T. Watson Chiropody
             </Title>
             <Title order={2}>
               Chiropody and Podiatry tailored to your needs
             </Title>
-            <Text>Tamworth, Polesworth, Whittington & Lichfield</Text>
+            <Text>
+              Leicester, Markfield, Groby, Glenfield, Anstey and areas west of
+              Leicester
+            </Text>
             <Flex gap="sm" justify="center">
               <Button
                 component="a"
-                href="tel:01827 62079"
+                href="tel:07908 067799"
                 leftIcon={<IconPhone size={14} />}
               >
                 Phone us
@@ -153,11 +152,11 @@ const MeetTheTeam = () => {
       <Title order={2}>Meet the team</Title>
       <Divider my="lg" />
       <Text pb="lg">
-        Our Chiropody practice is conveniently located near the centre of
-        Tamworth. The well established clinic is a private practice and has been
-        owned and operated by Gordon Watson and Lisa Scott-Watson for over 30
-        years. The practice aims to provide the highest quality foot care at
-        competitive prices in comfortable and professional surroundings.
+        The visiting practice is centered around Coalville, Loughborough,
+        Anstey, Glenfield, Braunstone Frith, Botcheson and Markfield. Owned and
+        operated by Gordon and Lisa Watson for 10 years. The practice aims to
+        provide the highest quality footcare at competitive prices in your home.
+        Gordon has been practicing for 35 years.
       </Text>
       <Grid justify="center">
         <Grid.Col md={4} sm={6} xs={8} sx={{ textAlign: "center" }}>
@@ -201,13 +200,10 @@ const Services = () => {
               </Text>
               <Text component="dd" m={0}>
                 <Stack spacing="xs">
-                  <Text>Routine treatment • £30.00</Text>
-                  <Text>Routine pensioner treatment (65+ years) • £26.00</Text>
-                  <Text>Home visit (1 person) • £33.00</Text>
-                  <Text>Home visit (2 person) • £55.00</Text>
-                  <Text>Othortics • £40.00+</Text>
-                  <Text fw="bold" italic>
-                    Missed appointments will incur full fee
+                  <Text>Home visit (1 person) • £33.00*</Text>
+                  <Text>Home visit (2 person) • £60.00*</Text>
+                  <Text fz="sm" italic>
+                    * Home visit inclusive of routine treatment
                   </Text>
                 </Stack>
               </Text>
@@ -221,10 +217,10 @@ const Services = () => {
             </Box>
             <Box component="dl" my="xs">
               <Text component="dt" c="dimmed">
-                Opening hours
+                Visiting hours
               </Text>
               <Text component="dd" m={0}>
-                Monday - Friday: 9:00am - 4:00pm
+                Monday - Thursday: 9:00am - 4:00pm
               </Text>
             </Box>
           </Flex>
@@ -237,7 +233,8 @@ const Services = () => {
                 Home visit areas
               </Text>
               <Text component="dd" m={0}>
-                Tamworth, Polesworth, Kingsbury, Lichfield and Measham
+                Markfield, Groby, Glenfield, Anstey and areas to the west of
+                Leicester.
               </Text>
             </Box>
           </Flex>
@@ -309,8 +306,6 @@ const Treatments = () => {
           <Paper radius="md" bg="gray.2">
             <Carousel loop withIndicators withControls={false}>
               {[
-                surgery1Image,
-                surgery2Image,
                 foot1Image,
                 foot2Image,
                 foot3Image,
@@ -321,7 +316,7 @@ const Treatments = () => {
                 <Carousel.Slide key={image.src}>
                   <MantineImage
                     src={image.src}
-                    alt="Surgery or foot image"
+                    alt="Foot image"
                     height={300}
                     fit="contain"
                   />
@@ -340,14 +335,14 @@ const Contact = () => {
     <Box id="contact">
       <Title order={2}>Contact us</Title>
       <Divider my="lg" />
-      <Grid align="center">
+      <Grid align="start">
         <Grid.Col md={8} sm={6} xs={12}>
           <Box h={300}>
             <iframe
               width="100%"
               height="100%"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?q=g%20t%20watson%20tamworth&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117678.4100450505!2d-1.2265194154731445!3d52.674621072206484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1561418709586!5m2!1sen!2suk"
               frameBorder="0"
               scrolling="no"
               marginHeight={0}
@@ -368,14 +363,14 @@ const Contact = () => {
               <Text component="dd" m={0}>
                 <Text
                   component="a"
-                  href="tel:01827 62079"
+                  href="tel:07908 067799"
                   sx={{
                     ":hover": {
                       textDecoration: "underline",
                     },
                   }}
                 >
-                  01827 62079
+                  07908 067799
                 </Text>
               </Text>
             </Box>
@@ -391,53 +386,14 @@ const Contact = () => {
               <Text component="dd" m={0}>
                 <Text
                   component="a"
-                  href="mailto:info@chiropodisttamworth.co.uk"
+                  href="mailto:info@chiropodistleicester.co.uk"
                   sx={{
                     ":hover": {
                       textDecoration: "underline",
                     },
                   }}
                 >
-                  info@chiropodisttamworth.co.uk
-                </Text>
-              </Text>
-            </Box>
-          </Flex>
-          <Flex gap="xs">
-            <Box my="xs">
-              <IconMapPin size={24} />
-            </Box>
-            <Box component="dl" my="xs">
-              <Text component="dt" c="dimmed">
-                Address
-              </Text>
-              <Text component="dd" m={0}>
-                <address>
-                  Pembi Chase, 11b Victoria Road, Tamworth, Staffordshire, B79
-                  7HS
-                </address>
-              </Text>
-            </Box>
-          </Flex>
-          <Flex gap="xs">
-            <Box my="xs">
-              <IconBrandFacebook size={24} />
-            </Box>
-            <Box component="dl" my="xs">
-              <Text component="dt" c="dimmed">
-                Facebook
-              </Text>
-              <Text component="dd" m={0}>
-                <Text
-                  component="a"
-                  href="http://www.facebook.com/chiropodist"
-                  sx={{
-                    ":hover": {
-                      textDecoration: "underline",
-                    },
-                  }}
-                >
-                  http://www.facebook.com/chiropodist
+                  info@chiropodistleicester.co.uk
                 </Text>
               </Text>
             </Box>
