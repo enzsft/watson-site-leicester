@@ -200,11 +200,8 @@ const Services = () => {
               </Text>
               <Text component="dd" m={0}>
                 <Stack spacing="xs">
-                  <Text>Home visit (1 person) • £33.00*</Text>
-                  <Text>Home visit (2 person) • £60.00*</Text>
-                  <Text fz="sm" italic>
-                    * Home visit inclusive of routine treatment
-                  </Text>
+                  <Text>Home visit (1 person) • £33.00</Text>
+                  <Text>Home visit (2 person) • £60.00</Text>
                 </Stack>
               </Text>
             </Box>
