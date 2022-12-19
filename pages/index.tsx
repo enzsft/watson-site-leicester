@@ -216,6 +216,9 @@ const Services = () => {
                   <Text>Home visit (2 person) • £60.00</Text>
                 </Stack>
               </Text>
+              <Text fw="bold" italic>
+                Missed appointments will incur full fee
+              </Text>
             </Box>
           </Flex>
         </Grid.Col>
