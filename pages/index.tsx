@@ -152,11 +152,11 @@ const MeetTheTeam = () => {
       <Title order={2}>Meet the team</Title>
       <Divider my="lg" />
       <Text pb="lg">
-        The visiting practice is centered around Coalville, Loughborough,
-        Anstey, Glenfield, Braunstone Frith, Botcheson and Markfield. Owned and
-        operated by Gordon and Lisa Watson for 10 years. The practice aims to
-        provide the highest quality footcare at competitive prices in your home.
-        Gordon has been practicing for 35 years.
+        The visiting practice is centered around Coalville, Anstey, Glenfield,
+        Braunstone Frith, Botcheson and Markfield. Owned and operated by Gordon
+        and Lisa Watson for 10 years. The practice aims to provide the highest
+        quality footcare at competitive prices in your home. Gordon has been
+        practicing for 35 years.
       </Text>
       <Grid justify="center">
         <Grid.Col md={4} sm={6} xs={8} sx={{ textAlign: "center" }}>
@@ -212,8 +212,8 @@ const Services = () => {
               </Text>
               <Text component="dd" m={0}>
                 <Stack spacing="xs">
-                  <Text>Home visit (1 person) • £33.00</Text>
-                  <Text>Home visit (2 person) • £60.00</Text>
+                  <Text>Home visit (1 person) • £35.00</Text>
+                  <Text>Home visit (2 person) • £58.00</Text>
                 </Stack>
               </Text>
               <Text fw="bold" italic>
