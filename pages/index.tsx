@@ -120,8 +120,8 @@ const Hero = () => {
               Chiropody and Podiatry tailored to your needs
             </Title>
             <Text>
-              Leicester, Markfield, Groby, Glenfield, Anstey and areas west of
-              Leicester
+              Markfield, Groby, Glenfield, Anstey, Coalville, Ibstock, Ratby,
+              Thornton, Whitwick, Standon under Bardon
             </Text>
             <Flex gap="sm" justify="center">
               <Button
@@ -152,11 +152,11 @@ const MeetTheTeam = () => {
       <Title order={2}>Meet the team</Title>
       <Divider my="lg" />
       <Text pb="lg">
-        The visiting practice is centered around Coalville, Anstey, Glenfield,
-        Braunstone Frith, Botcheson and Markfield. Owned and operated by Gordon
-        and Lisa Watson for 10 years. The practice aims to provide the highest
-        quality footcare at competitive prices in your home. Gordon has been
-        practicing for 35 years.
+        The visiting practice is centered around Markfield, Groby, Glenfield,
+        Anstey, Coalville, Ibstock, Ratby, Thornton, Whitwick, Standon under
+        Bardon. Owned and operated by Gordon and Lisa Watson for 10 years. The
+        practice aims to provide the highest quality footcare at competitive
+        prices in your home. Gordon has been practicing for 35 years.
       </Text>
       <Grid justify="center">
         <Grid.Col md={4} sm={6} xs={8} sx={{ textAlign: "center" }}>
@@ -245,8 +245,8 @@ const Services = () => {
                 Home visit areas
               </Text>
               <Text component="dd" m={0}>
-                Markfield, Groby, Glenfield, Anstey and areas to the west of
-                Leicester.
+                Markfield, Groby, Glenfield, Anstey, Coalville, Ibstock, Ratby,
+                Thornton, Whitwick, Standon under Bardon
               </Text>
             </Box>
           </Flex>
