@@ -15,6 +15,7 @@ import {
   Divider,
   Grid,
   Image as MantineImage,
+  Alert,
 } from "@mantine/core";
 import Image from "next/image";
 import logoImage from "../public/images/logo.png";
@@ -79,6 +80,10 @@ const Hero = () => {
         width: "100vw",
       }}
     >
+      <Alert variant="filled" sx={{ zIndex: 100, textAlign: "center" }}>
+        Due to high demand we are unable to book new clients until further
+        notice. <strong>Existing clients will continue to be seen.</strong>
+      </Alert>
       <Box
         component={Image}
         src={heroImage}
