@@ -80,10 +80,10 @@ const Hero = () => {
         width: "100vw",
       }}
     >
-      <Alert variant="filled" sx={{ zIndex: 100, textAlign: "center" }}>
+      {/* <Alert variant="filled" sx={{ zIndex: 100, textAlign: "center" }}>
         Due to high demand we are unable to book new clients until further
         notice. <strong>Existing clients will continue to be seen.</strong>
-      </Alert>
+      </Alert> */}
       <Box
         component={Image}
         src={heroImage}
@@ -217,8 +217,8 @@ const Services = () => {
               </Text>
               <Text component="dd" m={0}>
                 <Stack spacing="xs">
-                  <Text>Home visit (1 person) • £35.00</Text>
-                  <Text>Home visit (2 person) • £58.00</Text>
+                  <Text>Home visit (1 person) • £38.00</Text>
+                  <Text>Home visit (2 person) • £66.00</Text>
                 </Stack>
               </Text>
               <Text fw="bold" italic>
